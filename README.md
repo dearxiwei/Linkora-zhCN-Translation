@@ -8,6 +8,20 @@ A browser extension is available for saving web links directly to Linkora via sy
 
 [sync server](https://github.com/LinkoraApp/sync-server) | [Extension repo](https://github.com/LinkoraApp/browser-extension)
 
+# 关于zhCN的简体全局汉化
+
+## /locales/default_en.json
+添加了翻译好中文简体的文件default_en.json,
+default_en.json不参与编译,只修改这个不行
+
+## /locales/修改默认语言脚本
+该目录下为辅助翻译的脚本,把翻译好的json转换为kt代码,粘贴就进去就行,
+该文件夹用于翻译,不参与编译,仅供研究🧐
+
+## /composeApp/src/commonMain/kotlin/com/sakethh/linkora/Localization.kt
+这个文件才是翻译的关键!!!
+翻译只需要修改此文件
+
 ## Download
 
 [<img src="https://github.com/user-attachments/assets/a50513b3-dbf8-48c1-bff8-1f4215fefbb9"
